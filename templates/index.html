@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Генератор заданий ЕГЭ по литературе</title>
+</head>
+<body>
+  <h1>Генератор заданий ЕГЭ по литературе</h1>
+
+  <form method="post">
+    <label>Тема: <input type="text" name="topic"></label><br><br>
+    <label>Год: <input type="text" name="year"></label><br><br>
+    <label>Номер задания: <input type="text" name="number"></label><br><br>
+    <button type="submit">Сгенерировать</button>
+  </form>
+
+  {% if result %}
+    <h3>Результат:</h3>
+    <p>{{ result }}</p>
+  {% endif %}
+</body>
+</html>
